@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header center">
+            <h1 id="title">Mi primer formulario de encuesta</h1>
+            <p id="description">Gracias por tomarse el tiempo de ayudarme en mi especialización</p>
+        </header>
+        <main>
+
+            <form id="survey-form" action="">
+
+                <div class="form">
+                    <!--first sections-->
+                    <label id="name-label" for="name">Nombre: </label>
+                    <input id="name" placeholder="Ingresa tu nombre" type="text" class="text" required>
+                    <label id="email-label" for="email">Correo electrónico: </label>
+                    <input id="email" placeholder="Ingresa tu correo electrónico" type="email" class="text" required>
+                    <label id="number-label" for="age">Edad:</label>
+                    <input id="number" placeholder="Ingresa tu edad" type="number" class="text" min="15" max="99">
+                </div>
+
+                <div class="form">
+                    <!--Dropdown-->
+                    <label for="dropdown">Lenguajes de programación más usados en el mundo: </label>
+                    <select name="role" id="dropdown" class="form-control capitalize" required>
+                        <option disabled selected value>Elige tu favorito</option>
+                        <option value="php">php</option>
+                        <option value="javascript">javascript</option>
+                        <option value="java">java</option>
+                        <option value="python">python</option>
+                        <option value="ruby">ruby</option>
+                        <option value="c++">c++</option>
+                    </select>
+                </div>
+
+                <div class="form ">
+                    <!--Radio-->
+                    <label>Le sería fácil de aprender a un novato?</label>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="radio" class="radio">
+                        Definitivamente
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" class="radio ">
+                        Tal vez
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="not-sure" type="radio" class="radio ">
+                        No estoy seguro
+                    </label>
+                </div>
+
+                <div class="form">
+                    <!--Checkboxes-->
+                    <label>Qué conocimientos debería tener antes? (marque todo lo que corresponda)</label>
+                    <div class="capitalize">
+                        <label>
+                            <input name="prefer" value="front-end-projects" type="checkbox" class="checkbox">
+                            html
+                        </label>
+
+                        <label>
+                            <input name="prefer" value="front-end-projects" type="checkbox" class="checkbox">
+                            css
+                        </label>
+
+                        <label>
+                            <input name="prefer" value="front-end-projects" type="checkbox" class="checkbox">
+                            Estructura de datos
+                        </label>
+                        <label>
+                            <input name="prefer" value="front-end-projects" type="checkbox" class="checkbox">
+                            algoritmos
+                        </label>
+                        <label>
+                            <input name="prefer" value="front-end-projects" type="checkbox" class="checkbox">
+                            pseudocodigos
+                        </label>
+                        <label>
+                            <input name="prefer" value="front-end-projects" type="checkbox" class="checkbox">
+                            diseño
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="form">
+                    <!--Text area-->
+                    <label>Algún comentario o sugerencia?</label>
+                    <textarea name="comment" class="textarea" id="comments"
+                        placeholder="Ingresa tu comentario"></textarea>
+                </div>
+
+                <div class="form ">
+                    <button type="submit" id="submit" class="submit-btn">Enviar</button>
+                </div>
+
+            </form>
+        </main>
+    </div>
+
+</body>
+
+</html>
